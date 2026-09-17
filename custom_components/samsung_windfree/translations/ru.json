@@ -1,0 +1,26 @@
+{
+  "title": "Samsung WindFree",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Подключение Samsung WindFree",
+        "description": "Введите Personal Access Token SmartThings и Device ID кондиционера.",
+        "data": {"token": "Токен SmartThings", "device_id": "Device ID"},
+        "data_description": {
+          "token": "Personal Access Token с правами чтения и управления устройствами.",
+          "device_id": "SmartThings Device ID кондиционера Samsung."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось подключиться к SmartThings.",
+      "invalid_auth": "Неверный токен или недостаточно прав.",
+      "unknown": "Неизвестная ошибка."
+    },
+    "abort": {"already_configured": "Этот кондиционер уже настроен."}
+  },
+  "entity": {
+    "select": {"optional_mode": {"name": "Дополнительный режим"}},
+    "switch": {"windfree": {"name": "WindFree"}}
+  }
+}
