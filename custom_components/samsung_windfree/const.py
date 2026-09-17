@@ -1,0 +1,9 @@
+DOMAIN = "samsung_windfree"
+CONF_TOKEN = "token"
+CONF_DEVICE_ID = "device_id"
+CONF_DEVICE_NAME = "device_name"
+API_BASE = "https://api.smartthings.com/v1"
+CAPABILITY = "custom.airConditionerOptionalMode"
+ATTRIBUTE = "acOptionalMode"
+COMMAND = "setAcOptionalMode"
+MODES = ["off", "sleep", "quiet", "smart", "speed", "windFree", "windFreeSleep"]
