@@ -1,0 +1,31 @@
+{
+  "title": "Samsung WindFree",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Samsung WindFree",
+        "description": "Enter a SmartThings Personal Access Token and the air conditioner Device ID.",
+        "data": {
+          "token": "SmartThings token",
+          "device_id": "Device ID"
+        },
+        "data_description": {
+          "token": "Personal Access Token with permission to read and control devices.",
+          "device_id": "SmartThings Device ID of the Samsung air conditioner."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not connect to SmartThings.",
+      "invalid_auth": "Invalid token or insufficient permissions.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This air conditioner is already configured."
+    }
+  },
+  "entity": {
+    "select": {"optional_mode": {"name": "Optional mode"}},
+    "switch": {"windfree": {"name": "WindFree"}}
+  }
+}
